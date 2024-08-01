@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-23dp">
+
+    <ImageView
+        android:id="@+id/deposit2"
+        android:layout_width="136dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        app:srcCompat="@drawable/enter"
+        app:tint="@color/material_dynamic_tertiary90" />
+
+    <ImageView
+        android:id="@+id/deposit"
+        android:layout_width="246dp"
+        android:layout_height="219dp"
+        app:layout_constraintBottom_toBottomOf="@+id/deposit2"
+        app:layout_constraintEnd_toEndOf="@+id/deposit2"
+        app:layout_constraintStart_toStartOf="@+id/deposit2"
+        app:layout_constraintTop_toTopOf="@+id/deposit2"
+        app:layout_constraintVertical_bias="0.565"
+        app:srcCompat="@drawable/circle2"
+        app:tint="@color/purple_500" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check"
+        app:layout_constraintVertical_bias="0.583"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/check2"
+        android:layout_width="251dp"
+        android:layout_height="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/withdraw2"
+        app:layout_constraintVertical_bias="0.354"
+        app:srcCompat="@drawable/view"
+        app:tint="@color/material_dynamic_tertiary90" />
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="246dp"
+        android:layout_height="219dp"
+        app:layout_constraintBottom_toBottomOf="@+id/check2"
+        app:layout_constraintEnd_toEndOf="@+id/check2"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/check2"
+        app:layout_constraintTop_toTopOf="@+id/check2"
+        app:layout_constraintVertical_bias="0.483"
+        app:srcCompat="@drawable/circle2"
+        app:tint="@color/purple_500" />
+
+    <ImageView
+        android:id="@+id/withdraw"
+        android:layout_width="246dp"
+        android:layout_height="219dp"
+        app:layout_constraintBottom_toBottomOf="@+id/withdraw2"
+        app:layout_constraintEnd_toEndOf="@+id/withdraw2"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="@+id/withdraw2"
+        app:layout_constraintTop_toTopOf="@+id/withdraw2"
+        app:layout_constraintVertical_bias="0.379"
+        app:srcCompat="@drawable/circle2"
+        app:tint="@color/purple_500" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/deposit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/withdraw2"
+        android:layout_width="199dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deposit2"
+        app:layout_constraintVertical_bias="0.14"
+        app:srcCompat="@drawable/exit"
+        app:tint="@color/material_dynamic_tertiary90" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
